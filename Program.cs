@@ -4,10 +4,12 @@
 using static System.Console;
 Clear();
 
-string[] InitArray = { "Hellow", "34", "4679", "gh", "2442" };
+string[] InitArray = { "Hellow", "3kkj4", "4679", "gjjkh", "2442" };
+PrintArray(InitArray);
+Write("  =>  ");
 
 int countLengthNewArray = CountElementsLessThenFour(InitArray);
-WriteLine(countLengthNewArray);
+// WriteLine(countLengthNewArray);
 
 if (countLengthNewArray < 1)
 {
