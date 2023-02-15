@@ -4,12 +4,21 @@
 using static System.Console;
 Clear();
 
-string[] InitArray = { "Hellow", "34", "1", "ghjk", "uuu" };
+string[] InitArray = { "Hellow", "34", "4679", "gh", "2442" };
 
 int countLengthNewArray = CountElementsLessThenFour(InitArray);
 WriteLine(countLengthNewArray);
 
+if (countLengthNewArray < 1)
+{
+    WriteLine("Нет элементов длинной менее четырех символов");
+}
+else
+{
+    string[] ArrayLessThenFourSymbles = ReternElementsLessThenFourSymbles(InitArray, countLengthNewArray);
+    PrintArray(ArrayLessThenFourSymbles);
 
+}
 
 
 
@@ -35,14 +44,28 @@ string[] ReternElementsLessThenFourSymbles(string[] inArray, int newArrayLength)
 {
     string[] result = new string[newArrayLength];
     int lengthElement;
+    int m = 0;
     for (int i = 0; i < inArray.Length; i++)
     {
-        for (int m = 0; m < result.Length; m++)
+        
+        lengthElement = inArray[i].Length;
+        if (lengthElement < 4)
         {
-            lengthElement = inArray[i].Length;
-            if (lengthElement < 4) result[m]=inArray[i];
+            result[m] = inArray[i];
+            m++;
         }
 
     }
-return result;
+    return result;
+}
+
+//Метод, который выводит на печать строчный массив
+void PrintArray(string[] inArray)
+{
+    Write("[");
+    for (int i = 0; i < inArray.Length - 1; i++)
+    {
+        Write($"{inArray[i]}, ");
+    }
+    Write($"{inArray[inArray.Length - 1]}]");
 }
