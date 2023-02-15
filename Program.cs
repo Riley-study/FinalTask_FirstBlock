@@ -4,7 +4,7 @@
 using static System.Console;
 Clear();
 
-string[] InitArray = { "Hellow", "3kkj4", "4679", "gjjkh", "2442" };
+string[] InitArray = { "Hellow", "3k", "4679", "Russia", "24" , "_"};
 PrintArray(InitArray);
 Write("  =>  ");
 
@@ -13,7 +13,7 @@ int countLengthNewArray = CountElementsLessThenFour(InitArray);
 
 if (countLengthNewArray < 1)
 {
-    WriteLine("Нет элементов длинной менее четырех символов");
+    WriteLine("[]");
 }
 else
 {
@@ -41,7 +41,7 @@ int CountElementsLessThenFour(string[] inArray)
     return count;
 }
 
-// Метод, который из заданного массива строк формирует массив из строк, длинна которых меньше либо равна трем символом
+// Метод, который из заданного массива строк формирует массив из строк, длинна которых меньше либо равна трем символам
 string[] ReternElementsLessThenFourSymbles(string[] inArray, int newArrayLength)
 {
     string[] result = new string[newArrayLength];
