@@ -9,7 +9,7 @@ PrintArray(InitArray);
 Write("  =>  ");
 
 int countLengthNewArray = CountElementsLessThenFour(InitArray);
-// WriteLine(countLengthNewArray);
+// WriteLine(countLengthNewArray); для проверки коррекной работы метода
 
 if (countLengthNewArray < 1)
 {
