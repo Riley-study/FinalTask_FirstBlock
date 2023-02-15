@@ -111,6 +111,7 @@ lint/tmp/
 .builds
 *.pidb
 *.scc
+*.csproj
 
 # Visual C++ cache files
 ipch/
